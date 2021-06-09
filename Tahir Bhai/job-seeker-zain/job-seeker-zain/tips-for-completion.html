@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Dashboard</title>
+   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+   <link href="css/custom.css" rel="stylesheet" type="text/css">
+   <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+   <link href="slick/slick-theme.css" rel="stylesheet" type="text/css">
+   <link href="css/animate.css" rel="stylesheet" type="text/css">
+   <link rel="icon" href="images/fav-icon.png" type="image/png">
+   <link href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+</head>
+
+<body>
+
+   <!-- start header  -->
+   <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <a class="navbar-brand" href="#">Logo Here</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto px-5">
+               <li class="nav-item active">
+                  <a class="nav-link" href="#">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link " href="#">News Flash</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link " href="#"> Contact Us</a>
+               </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 px-3">
+               <span> <i class="fa fa-user"></i> Jane Smith</span>
+            </form>
+         </div>
+      </nav>
+   </header>
+   <!-- end header  -->
+
+   <br><br>
+   <!-- start content  -->
+
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col-md-3 col-lg-3 col-12">
+            <div class="left-side">
+               <ul class="left-side-panel">
+                  <li> <i class="fa fa-paw"> &nbsp;&nbsp;<a href="#">Dashboard</a> </i> <span><i
+                           class="fa fa-arrow-right"></i></span></li>
+                  <li> <i class="fa fa-file"></i>&nbsp;&nbsp;<a href="">My Cv</a> </li>
+                  <li> <i class="fa fa-file"></i>&nbsp;&nbsp;<a href="#">Preview Profile</a> </li>
+                  <li> <i class="fa fa-file"></i>&nbsp;&nbsp;<a href="#">Tips for Profile Completion</a> </li>
+                  <li> <i class="fa fa-sign-out"></i> &nbsp;&nbsp;<a href="#">Logout</a> </li>
+               </ul>
+            </div>
+         </div>
+         <div class="col-md-9 col-lg-9 col-12">
+            <div class="right-side">
+               <section class="section-tips-completion">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                           <div class="row">
+                              <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                                 <div class="nav flex-column nav-pills tips-pills" id="v-pills-tab" role="tablist"
+                                    aria-orientation="vertical">
+                                    <a class="nav-link tips-link active" id="v-pills-personal-info-tab"
+                                       data-toggle="pill" href="#v-pills-personal-info" role="tab"
+                                       aria-controls="v-pills-home" aria-selected="true">personal information</a>
+                                    <a class="nav-link tips-link" id="v-pills-education-tab" data-toggle="pill"
+                                       href="#v-pills-education" role="tab" aria-controls="v-pills-profile"
+                                       aria-selected="false">education</a>
+                                    <a class="nav-link tips-link" id="v-pills-history-tab" data-toggle="pill"
+                                       href="#v-pills-history" role="tab" aria-controls="v-pills-messages"
+                                       aria-selected="false">employment history</a>
+                                    <a class="nav-link tips-link" id="v-pills-skills-tab" data-toggle="pill"
+                                       href="#v-pills-skills" role="tab" aria-controls="v-pills-settings"
+                                       aria-selected="false">Skills</a>
+                                    <a class="nav-link tips-link" id="v-pills-langauges-tab" data-toggle="pill"
+                                       href="#v-pills-langauges" role="tab" aria-controls="v-pills-settings"
+                                       aria-selected="false">Languages</a>
+                                    <a class="nav-link tips-link" id="v-pills-job-tab" data-toggle="pill"
+                                       href="#v-pills-job" role="tab" aria-controls="v-pills-settings"
+                                       aria-selected="false">Job Preference</a>
+                                 </div>
+                              </div>
+                              <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                                 <div class="tab-content tips-content" id="v-pills-tabContent">
+                                    <div class="tab-pane tips-pane fade show active" id="v-pills-personal-info"
+                                       role="tabpanel" aria-labelledby="v-pills-personal-info-tab">
+                                       <div class="personal-info-form">
+                                          <div class="row d-flex align-items-center justify-content-center">
+                                             <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                                <div class="user-icon">
+                                                   <i class="fas fa-user"></i>
+                                                </div>
+                                             </div>
+                                          </div>
+
+                                          <form class="personal-info-main">
+                                             <div class="row">
+                                               <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                 <input type="text" class="form-control personal-info-control" placeholder="First name">
+                                               </div>
+                                               <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                 <input type="text" class="form-control personal-info-control" placeholder="Last name">
+                                               </div>
+                                             </div>
+                                              <div class="row">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                  <input type="email" class="form-control personal-info-control" placeholder="Email">
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                  <input type="text" class="form-control personal-info-control" placeholder="date of birth">
+                                                </div>
+                                              </div>
+                                              <div class="row">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                  <input type="tel" class="form-control personal-info-control" placeholder="mobile number">
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                  <input type="text" class="form-control personal-info-control" placeholder="gender">
+                                                </div>
+                                              </div>
+                                              <div class="row">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                  <input type="text" class="form-control personal-info-control" placeholder="current location">
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                  <input type="text" class="form-control personal-info-control" placeholder="Desired Location of Employment">
+                                                </div>
+                                              </div>
+                                              <div class="row">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                  <input type="text" class="form-control personal-info-control" placeholder="Marital Status">
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                  <input type="text" class="form-control personal-info-control" placeholder="Career Level">
+                                                </div>
+                                              </div>
+                                              <div class="row">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                  <input type="text" class="form-control personal-info-control" placeholder="Experince">
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                  <input type="text" class="form-control personal-info-control" placeholder="Do you hold a UAE family book">
+                                                </div>
+                                              </div>
+                                              <div class="row">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                  <input type="text" class="form-control personal-info-control" placeholder="Passport Issuing Authority">
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                  <input type="text" class="form-control personal-info-control" placeholder="Current Job Tittle">
+                                                </div>
+                                              </div>
+                                              <div class="row">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                  <input type="text" class="form-control personal-info-control" placeholder="Notice Period">
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                  <input type="text" class="form-control personal-info-control" placeholder="Industry">
+                                                </div>
+                                              </div>
+                                              <div class="row">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                  <input type="text" class="form-control personal-info-control" placeholder="Job Status">
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                  <input type="text" class="form-control personal-info-control" placeholder="Address">
+                                                </div>
+                                              </div>
+                                              <div class="row">
+                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                                    <textarea name="" id="" rows="10" class="personal-info-control-area" placeholder="career summary :"></textarea>
+                                                 </div>
+                                              </div>
+                                              <div class="row">
+                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                    <div class="personal-info-btn-main">
+                                                       <button type="submit" class="btn personal-info-btn">submit</button>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                           </form>
+                                       </div>
+                                    </div>
+                                    <div class="tab-pane tips-pane fade" id="v-pills-education" role="tabpanel"
+                                       aria-labelledby="v-pills-education-tab">
+                                       <div class="personal-info-form">
+ 
+                                          <form class="personal-info-main">
+                                             <div class="row">
+                                               <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                 <input type="text" class="form-control personal-info-control" placeholder="school">
+                                               </div>
+                                               <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                 <input type="text" class="form-control personal-info-control" placeholder="School location">
+                                               </div>
+                                             </div>
+                                              <div class="row">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                  <input type="email" class="form-control personal-info-control" placeholder="Country">
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                  <input type="text" class="form-control personal-info-control" placeholder="Degree">
+                                                </div>
+                                              </div>
+                                              <div class="row">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                  <input type="tel" class="form-control personal-info-control" placeholder="Field Of Study">
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                  <input type="text" class="form-control personal-info-control" placeholder="Currently Studying Here">
+                                                </div>
+                                              </div>
+                                              <div class="row">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                  <input type="text" class="form-control personal-info-control" placeholder="Start Joining Year">
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                  <input type="text" class="form-control personal-info-control" placeholder="End Leaving Year">
+                                                </div>
+                                              </div>
+                                              <div class="row">
+                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                    <div class="personal-info-btn-main">
+                                                       <button type="submit" class="btn personal-info-btn">submit</button>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                           </form>
+                                       </div>
+                                    </div>
+                                    <div class="tab-pane tips-pane fade" id="v-pills-history" role="tabpanel"
+                                       aria-labelledby="v-pills-history-tab">
+                                       <div class="personal-info-form">
+ 
+                                          <form class="personal-info-main">
+                                             <div class="row">
+                                               <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                 <input type="text" class="form-control personal-info-control" placeholder="Designation">
+                                               </div>
+                                               <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                 <input type="text" class="form-control personal-info-control" placeholder="Current Monthly Salary (AED)">
+                                               </div>
+                                             </div>
+                                              <div class="row">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                  <input type="email" class="form-control personal-info-control" placeholder="Company Name">
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                  <input type="text" class="form-control personal-info-control" placeholder="Industry">
+                                                </div>
+                                              </div>
+                                              <div class="row">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                  <input type="tel" class="form-control personal-info-control" placeholder="Location">
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                  <input type="text" class="form-control personal-info-control" placeholder="Country">
+                                                </div>
+                                              </div>
+                                              <div class="row">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                  <input type="text" class="form-control personal-info-control" placeholder="Joining Date">
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                  <input type="text" class="form-control personal-info-control" placeholder="Resignation Date">
+                                                </div>
+                                              </div>
+                                              <div class="row">
+                                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                                   <textarea name="" id="" rows="6" class="personal-info-control-area" placeholder="career summary :"></textarea>
+                                                </div>
+                                             </div>
+                                              <div class="row">
+                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                    <div class="personal-info-btn-main">
+                                                       <button type="submit" class="btn personal-info-btn">submit</button>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                           </form>
+                                       </div>
+                                    </div>
+                                    <div class="tab-pane tips-pane fade" id="v-pills-skills" role="tabpanel"
+                                       aria-labelledby="v-pills-skills-tab">
+                                       <div class="personal-info-form">
+ 
+                                          <form class="personal-info-main">
+                                             <div class="row">
+                                               <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                                 <input type="text" class="form-control personal-info-control" placeholder="skill">
+                                               </div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 ml-auto">
+                                                  <div class="add-icon-main">
+                                                     <a href="#" class="add-icon-a"><i class="fas fa-plus"></i></a>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="row">
+                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                    <div class="personal-info-btn-main">
+                                                       <button type="submit" class="btn personal-info-btn">submit</button>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                           </form>
+                                       </div>
+                                    </div>
+                                    <div class="tab-pane tips-pane fade" id="v-pills-langauges" role="tabpanel"
+                                       aria-labelledby="v-pills-langauges-tab">
+                                       <div class="personal-info-form">
+ 
+                                          <form class="personal-info-main">
+                                             <div class="row">
+                                               <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                                 <input type="text" class="form-control personal-info-control" placeholder="skill">
+                                               </div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 ml-auto">
+                                                  <div class="add-icon-main">
+                                                     <a href="#" class="add-icon-a"><i class="fas fa-plus"></i></a>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="row">
+                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                    <div class="personal-info-btn-main">
+                                                       <button type="submit" class="btn personal-info-btn">submit</button>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                           </form>
+                                       </div>
+                                    </div>
+                                    <div class="tab-pane tips-pane fade" id="v-pills-job" role="tabpanel"
+                                       aria-labelledby="v-pills-job-tab">
+                                       <div class="personal-info-form">
+ 
+                                          <form class="personal-info-main">
+                                             <div class="row">
+                                               <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                                 <input type="text" class="form-control personal-info-control" placeholder="skill">
+                                               </div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 ml-auto">
+                                                  <div class="add-icon-main">
+                                                     <a href="#" class="add-icon-a"><i class="fas fa-plus"></i></a>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="row">
+                                                 <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                                    <div class="personal-info-btn-main">
+                                                       <button type="submit" class="btn personal-info-btn">submit</button>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                           </form>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- end content  -->
+   <br>
+   <footer id="footer">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-12">
+               <div class="footerlogo">
+                  <!-- <img src="images/footer-logo.png" class="image-fluid" alt="img"> -->
+                  <h3>LOGO HERE</h3>
+                  <p>Place holder is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                     been the industry's standard dummy.</p>
+                  <form>
+                     <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                           <div class="newslist">
+                              <input type="email" name="" placeholder="Email Address">
+                              <a href="#"><i class="fa fa-paper-plane" aria-hidden="true"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+            <div class="col-md-1 col-sm-1
+               col-xs-12"></div>
+            <div class="col-md-5 col-sm-5 col-xs-12 secondcolumnFooter">
+               <div class="footerlist">
+                  <h4>Useful Links</h4>
+                  <ul>
+                     <li><a href="">Home</a></li>
+                     <li><a href="">For Candidates</a></li>
+                     <li><a href="">About Us</a></li>
+                     <li><a href="">For Employees </a></li>
+                  </ul>
+
+                  <ul>
+                     <li><a href="">New Flash </a></li>
+                     <li><a href="">Privacy Policy </a></li>
+                     <li><a href="">FAQ's</a></li>
+                     <li><a href="">Contact Us</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12">
+               <div class="footerlistadresss">
+                  <h4>Contact Us</h4>
+                  <ul>
+                     <li>
+                        <a href="phone:1234567890">
+                           <i class="fa fa-phone" aria-hidden="true"></i><span>Call Us:</span><br> 123 456 7890
+                        </a>
+                     </li>
+                     <li><a href="#"><i class="fa fa-envelope"
+                              aria-hidden="true"></i><span>Email:</span><br>Yourdomain.com</a></li>
+                     <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                           <span>Address:</span><br>126 Tenmile, Newport Nes, VA</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </footer>
+   <div class="copysec">
+      <div class="container  d-flex justify-content-between align-items-center">
+         <p> @2021 - Form <b>Brand Name</b> . All Rights Reserved</p>
+         <ul class="d-flex mt-4">
+            <li class="px-2"><a href="#">Home</a></li>
+            <li class="px-2"><a href="#">Privacy Policy</a></li>
+            <li class="px-2"><a href="#">FAQ's</a></li>
+            <p class="up-arrow"><a href="#"><i class="fa fa-arrow-up"></i></a> </p>
+
+         </ul>
+
+      </div>
+
+   </div>
+
+
+
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="js/bootstrap.js"></script>
+   <!-- <script src="js/custom.js"></script> -->
+   <script src="js/wow.min.js">  </script>
+   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+   <script type="text/javascript" src="slick/slick.min.js"></script>
+   <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+</body>
+
+</html>

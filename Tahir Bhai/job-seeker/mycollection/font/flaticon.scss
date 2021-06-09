@@ -1,0 +1,89 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?f05ed4fc66d83d678e3e973b162206b2") format("truetype"),
+url("./flaticon.woff?f05ed4fc66d83d678e3e973b162206b2") format("woff"),
+url("./flaticon.woff2?f05ed4fc66d83d678e3e973b162206b2") format("woff2"),
+url("./flaticon.eot?f05ed4fc66d83d678e3e973b162206b2#iefix") format("embedded-opentype"),
+url("./flaticon.svg?f05ed4fc66d83d678e3e973b162206b2#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "eye": "\f101",
+    "male-user-shadow": "\f102",
+    "office-push-pin": "\f103",
+    "magnifying-glass": "\f104",
+    "notepad": "\f105",
+    "notes": "\f106",
+    "user": "\f107",
+    "add": "\f108",
+    "right-arrow": "\f109",
+    "telegram": "\f10a",
+    "up-arrow-angle": "\f10b",
+    "dashboard": "\f10c",
+    "logout": "\f10d",
+    "call": "\f10e",
+    "envelope": "\f10f",
+    "pin": "\f110",
+);
+
+.flaticon-eye:before {
+    content: map-get($flaticon-map, "eye");
+}
+.flaticon-male-user-shadow:before {
+    content: map-get($flaticon-map, "male-user-shadow");
+}
+.flaticon-office-push-pin:before {
+    content: map-get($flaticon-map, "office-push-pin");
+}
+.flaticon-magnifying-glass:before {
+    content: map-get($flaticon-map, "magnifying-glass");
+}
+.flaticon-notepad:before {
+    content: map-get($flaticon-map, "notepad");
+}
+.flaticon-notes:before {
+    content: map-get($flaticon-map, "notes");
+}
+.flaticon-user:before {
+    content: map-get($flaticon-map, "user");
+}
+.flaticon-add:before {
+    content: map-get($flaticon-map, "add");
+}
+.flaticon-right-arrow:before {
+    content: map-get($flaticon-map, "right-arrow");
+}
+.flaticon-telegram:before {
+    content: map-get($flaticon-map, "telegram");
+}
+.flaticon-up-arrow-angle:before {
+    content: map-get($flaticon-map, "up-arrow-angle");
+}
+.flaticon-dashboard:before {
+    content: map-get($flaticon-map, "dashboard");
+}
+.flaticon-logout:before {
+    content: map-get($flaticon-map, "logout");
+}
+.flaticon-call:before {
+    content: map-get($flaticon-map, "call");
+}
+.flaticon-envelope:before {
+    content: map-get($flaticon-map, "envelope");
+}
+.flaticon-pin:before {
+    content: map-get($flaticon-map, "pin");
+}
